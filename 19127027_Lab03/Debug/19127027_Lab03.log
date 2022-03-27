@@ -1,0 +1,5 @@
+﻿  function.cpp
+G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.h(7,10): fatal error C1083: Cannot open include file: 'opencv2/imgproc.hpp': No such file or directory
+  main.cpp
+G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.h(7,10): fatal error C1083: Cannot open include file: 'opencv2/imgproc.hpp': No such file or directory
+  Generating Code...
