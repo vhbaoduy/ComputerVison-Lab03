@@ -1,57 +1,9 @@
-﻿  function.cpp
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(23,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(29,59): warning C4244: '=': conversion from 'double' to '_Tp', possible loss of data
-          with
-          [
-              _Tp=float
-          ]
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(39,31): warning C4244: '/=': conversion from 'double' to '_Tp', possible loss of data
-          with
-          [
-              _Tp=float
-          ]
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(46,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(47,15): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(59,19): warning C4101: 'r': unreferenced local variable
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(333,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(338,50): warning C4305: 'argument': truncation from 'double' to 'float'
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(349,14): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(358,35): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(370,16): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(419,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(444,50): warning C4305: 'argument': truncation from 'double' to 'float'
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(457,10): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(462,22): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(477,39): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(489,16): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(535,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(552,50): warning C4244: 'argument': conversion from '_Ty1' to 'float', possible loss of data
-          with
-          [
-              _Ty1=int
-          ]
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(552,30): warning C4244: 'argument': conversion from '_Ty2' to 'float', possible loss of data
-          with
-          [
-              _Ty2=int
-          ]
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(561,63): warning C4244: 'argument': conversion from '_Ty1' to 'float', possible loss of data
-          with
-          [
-              _Ty1=int
-          ]
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(561,36): warning C4244: 'argument': conversion from '_Ty2' to 'float', possible loss of data
-          with
-          [
-              _Ty2=int
-          ]
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(597,42): warning C4305: 'argument': truncation from 'double' to 'float'
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(598,45): warning C4305: 'argument': truncation from 'double' to 'float'
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(604,45): warning C4305: 'argument': truncation from 'double' to 'float'
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(605,45): warning C4305: 'argument': truncation from 'double' to 'float'
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(569,11): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-G:\ComputerVision-Lab\Lab03\19127027_Lab03\function.cpp(658,9): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-  main.cpp
+﻿  main.cpp
 G:\ComputerVision-Lab\Lab03\19127027_Lab03\main.cpp(45,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
 G:\ComputerVision-Lab\Lab03\19127027_Lab03\main.cpp(48,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-LINK : fatal error LNK1104: cannot open file 'G:\ComputerVision-Lab\Lab03\x64\Release\19127027_Lab03.exe'
+  Generating code
+  1 of 552 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  19127027_Lab03.vcxproj -> G:\ComputerVision-Lab\Lab03\x64\Release\19127027_Lab03.exe

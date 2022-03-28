@@ -430,7 +430,7 @@ Mat detectBlob(const Mat& imageSource, vector<pair<pair<int, int>, float>>& corn
 }
 
 
-Mat detectBlobDoG(const Mat& imageSource, vector<pair<pair<int, int>, float>>& corners, float sigma, int scaleNumber, float threshold) {
+Mat detectDoG(const Mat& imageSource, vector<pair<pair<int, int>, float>>& corners, float sigma, int scaleNumber, float threshold) {
 	Mat imageGray;
 	Mat imageClone = imageSource.clone();
 	if (imageSource.channels() == 3) {
@@ -601,8 +601,8 @@ int matchBySIFT(const Mat& img1, const Mat& img2, int detector, int k, bool obse
 	}
 	if (detector == 3) {
 		vector<pair<pair<int, int>, float>> corners1, corners2;
-		detectBlob(imgGray1, corners1, 1.0, 5, 0.4);
-		detectBlob(imgGray2, corners2, 1.0, 5, 0.4);
+		detectDoG(imgGray1, corners1, 1.0, 5, 0.4);
+		detectDoG(imgGray2, corners2, 1.0, 5, 0.4);
 		keypoints1 = convertToKeyPointVector(corners1);
 		keypoints2 = convertToKeyPointVector(corners2);
 	}
@@ -640,6 +640,7 @@ int matchBySIFT(const Mat& img1, const Mat& img2, int detector, int k, bool obse
 		}
 	}
 
+	//  compute sum distances
 	double sumDistances = 0;
 	if (good_matches.size() == 0) {
 		sumDistances = -1.0;
@@ -649,8 +650,11 @@ int matchBySIFT(const Mat& img1, const Mat& img2, int detector, int k, bool obse
 			sumDistances += good_matches[i].distance;
 		}
 	}
+
+	// option
 	if (observe) {
 		Mat result;
+		
 		drawMatches(img1, keypoints1, img2, keypoints2, good_matches, result);
 		imshow("Result", result);
 		waitKey(0);

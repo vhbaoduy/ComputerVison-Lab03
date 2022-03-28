@@ -11,9 +11,9 @@ int main(int argc, char** argv) {
 		"{scaleNumber |8|The number of scaling sigma in using Blob. Default: 8}"
 		"{threshold ||The threshold to find local maxima. Default: [Harris: 0.01, Blob:0.2]}"
 		"{detector |4|Detector used in Match by SIFT method. detector = [1: Harris, 2: Blob, 3: Blob by DoG, 4: SIFT]. Default: 4}"
-		"{knn |2| K-nearest neighbors used in method [4, 5]}"
-		"{imageQuery || Image query's path used method [4, 5]}"
-		"{imageTrain || Image train's path used method [4, 5]}"
+		"{knn |2| K-nearest neighbors used in method [4]}"
+		"{imageQuery || Image query's path used method [4]}"
+		"{imageTrain || Image train's path used method [4]}"
 		);
 
 	// Show help's commandline 
@@ -68,10 +68,10 @@ int main(int argc, char** argv) {
 			string threshold = parser.get<String>("threshold");
 			vector<pair<pair<int, int>, float>> corners;
 			if (threshold != "") {
-				result = detectBlobDoG(image, corners, sigma, scaleNumber, stof(threshold));
+				result = detectDoG(image, corners, sigma, scaleNumber, stof(threshold));
 			}
 			else {
-				result = detectBlobDoG(image, corners, sigma, scaleNumber);
+				result = detectDoG(image, corners, sigma, scaleNumber);
 			}
 		}
 		// Matching by SIFT and KNN

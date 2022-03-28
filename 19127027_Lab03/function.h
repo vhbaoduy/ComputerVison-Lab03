@@ -198,7 +198,7 @@ Mat detectBlob(const Mat& imageSource, vector<pair<pair<int, int>, float>>& corn
 * @param threshold - threshold to find maxima
 * @return destination image that is mapped key point to image source
 */
-Mat detectBlobDoG(const Mat& imageSource, vector<pair<pair<int, int>, float>>& corners, float sigma = 1.0, int scaleNumber = 8, float threshold = 0.2);
+Mat detectDoG(const Mat& imageSource, vector<pair<pair<int, int>, float>>& corners, float sigma = 1.0, int scaleNumber = 8, float threshold = 0.2);
 
 
 /*
